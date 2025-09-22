@@ -948,12 +948,6 @@ h4 {
 .consultation h2 {
   margin-bottom: 8rem;
 }
-.consultation .status {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .consultation h2,
 .consultation .p-heading {
   text-align: center;
