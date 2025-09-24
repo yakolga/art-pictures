@@ -3,7 +3,8 @@ import { postData } from "./services/requests";
 const forms = () => {
     const form = document.querySelectorAll('form'),
         inputs = document.querySelectorAll('input'),
-        upload = document.querySelectorAll('[name="upload"]');
+        upload = document.querySelectorAll('[name="upload"]'),
+        selects = document.querySelectorAll('select');
     
     const message = {
         loading: 'Loading...',
@@ -43,12 +44,16 @@ const forms = () => {
             statusMessage.append(textMessage);
 
             const formData = new FormData(item);
+            selects.forEach(select => {
+                formData.append(select.getAttribute('id'), select.options[select.selectedIndex].text);
+            });
             let api;
             item.closest('.popup-design') || item.classList.contains('calc__form') ? api = path.designer : api = path.question;
 
             postData(api, formData)
                 .then(res => {
                     console.log(res);
+                    console.log('hi');
                     statusImg.setAttribute('src', message.ok);
                     statusMessage.textContent = message.success;
                 })
