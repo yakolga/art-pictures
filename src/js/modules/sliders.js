@@ -18,7 +18,7 @@ const slider = (slides, dir, prev, next) => {
             item.style.display = "none";
         });
 
-        items[slideIndex - 1].style.display = "block";
+        items[slideIndex - 1].style.display = "flex";
     }
 
     showSlides(slideIndex);

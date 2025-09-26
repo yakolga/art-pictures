@@ -13,7 +13,7 @@ const calc = (size, material, options, promocode, result, input) => {
 
         if (sizeBlock.value == '' || materialBlock.value == '') {
             resultBlock.textContent = 'Please, choose size and material of the picture';
-        } else if (promocodeBlock.value === 'IWANTIMPORTANT') {
+        } else if (promocodeBlock.value === 'IWANTPOPART') {
             resultBlock.textContent = Math.round(sum * 0.7);
             priceInput.value = Math.round(sum * 0.7);
         } else {

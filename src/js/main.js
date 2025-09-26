@@ -6,6 +6,11 @@ import checkTextInputs from "./modules/checkTextInputs";
 import showMoreStyles from "./modules/showMoreStyles";
 import calc from "./modules/calc";
 import filter from "./modules/filtering";
+import pictureSize from "./modules/pictureSize";
+import accordion from "./modules/accordion";
+import burger from "./modules/burger";
+import scrolling from "./modules/scrolling";
+import drop from "./modules/drop";
 
 window.addEventListener('DOMContentLoaded', function() {
     'use strict';
@@ -19,4 +24,9 @@ window.addEventListener('DOMContentLoaded', function() {
     showMoreStyles('.button-styles', '#styles .row');
     calc("#size", "#material", '#options', '.promocode', '.calc-price', '.calc__form input[name="price"]');
     filter('.portfolio-menu', 'LI', '.portfolio-wrapper', '.portfolio-no');
+    pictureSize('.sizes-block');
+    accordion('.accordion-heading', '.accordion-block');
+    burger('.burger-menu', '.burger');
+    scrolling('.pageup');
+    drop();
 });

@@ -12,8 +12,6 @@ const showMoreStyles = (trigger, wrapper) => {
     });
 
     function createCards(response) {
-        console.log(response);
-console.log(response?.styles);
         response.styles.forEach(({src, title, link}) => {
             let card = document.createElement('div');
 
@@ -23,7 +21,7 @@ console.log(response?.styles);
                 <div class="styles-block">
                     <img src=${src} alt="style">
                     <h4>${title}</h4>
-                    <a href=${link}>Подробнее</a>
+                    <a href=${link}>More</a>
                 </div>
             `;
 

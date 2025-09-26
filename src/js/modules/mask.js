@@ -16,7 +16,7 @@ const mask = (selector) => {
     };
 
     function createMask(event) {
-        let matrix = '+380 __ ___ __ __',
+        let matrix = '+48 ___ ___ ___',
             i = 0,
             def = matrix.replace(/\D/g, ''),
             value = this.value.replace(/\D/g, '');

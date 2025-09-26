@@ -106,7 +106,7 @@ const modals = () => {
     toggleModal('.button-consultation', '.popup-consultation');
     toggleModal('.fixed-gift', '.popup-gift', true);
     openByScroll('.fixed-gift');
-    showModalByTime('.popup-consultation', 10000);
+    // showModalByTime('.popup-consultation', 10000);
 };
 
 export default modals;
