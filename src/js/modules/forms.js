@@ -52,8 +52,6 @@ const forms = () => {
 
             postData(api, formData)
                 .then(res => {
-                    console.log(res);
-                    console.log('hi');
                     statusImg.setAttribute('src', message.ok);
                     statusMessage.textContent = message.success;
                 })
